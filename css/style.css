@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --primary-color: #212121;
   --primary-shade-color: #2f303a;
@@ -14,6 +23,7 @@ body {
   /*font-family: "sans-serif";-----emergecy fonts*/
   font-family: Roboto;
   font-style: normal;
+  margin: 0;
 }
 
 /******------HEADER------*******/
@@ -51,6 +61,7 @@ body {
   cursor: pointer;
 }
 .contact-list {
+  padding-left: 0;
   list-style: none;
   color: var(--primary-shade2-color);
 }
