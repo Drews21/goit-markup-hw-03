@@ -196,7 +196,7 @@ body {
 .skills-item {
   margin-right: 30px;
 }
-.skills-item:not(:last-child):after {
+.skills-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -258,7 +258,9 @@ body {
 }
 
 /*******П О Р Т Ф О Л И О***********/
-
+.gallery {
+  background-color: rgb(180, 223, 116);
+}
 /*************filter************/
 
 .secondary-btn {
