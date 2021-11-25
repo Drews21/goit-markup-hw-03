@@ -240,6 +240,21 @@ body {
   cursor: pointer;
 }
 
+.filter-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  /*:not(:last-child):after */
+}
+.filter-btn {
+  padding-top: 94px;
+  padding-bottom: 0px;
+}
+
+.filter-item {
+  margin: 8px;
+}
 .filter-item:hover {
   color: var(--accent-color);
 }
@@ -247,6 +262,11 @@ body {
 .filter-link {
   text-decoration: none;
   color: var(--primary-color);
+}
+
+.projects {
+  padding-top: 50px;
+  padding-bottom: 94px;
 }
 
 .projects-title {
