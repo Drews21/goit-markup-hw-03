@@ -269,6 +269,16 @@ body {
   padding-bottom: 94px;
 }
 
+.wrap {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eeeeee;
+  margin-bottom: 30px;
+}
+.wrap-text {
+  padding: 20px 24px;
+}
+
 .projects-title {
   font-weight: bold;
   font-size: 18px;
