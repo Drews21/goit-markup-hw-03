@@ -27,7 +27,7 @@ h4,
 p,
 ul,
 li {
-  outline: 1px dotted teal;
+  /*outline: 1px dotted teal;*/
   margin: 0;
 }
 
@@ -39,7 +39,7 @@ body {
 }
 
 .header {
-  background-color: yellowgreen;
+  /*background-color: yellowgreen;*/
   border-bottom: 1px solid #ececec;
 }
 
