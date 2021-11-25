@@ -19,18 +19,13 @@ html {
   --secondary-shade2-color: rgba(255, 255, 255, 0.6);
 }
 
-/* Убираем внутренние отступы */
-ul[class] {
-  padding: 0;
-}
-
 /* Убираем внешние отступы */
 h1,
 h2,
 h3,
 h4,
 p,
-ul[class],
+ul,
 li {
   outline: 1px dotted teal;
   margin: 0;
@@ -45,18 +40,27 @@ body {
 
 .header {
   background-color: yellowgreen;
+  border-bottom: 1px solid #ececec;
 }
 
 .container {
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 /******------HEADER------*******/
-
+.navigation {
+  margin-left: 93px;
+}
+.nav-list {
+  display: flex;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+}
 .web-logo {
   color: var(--accent-color);
 }
@@ -85,14 +89,21 @@ body {
   cursor: pointer;
 }
 .contact-list {
+  display: flex;
+  margin-left: auto;
+  /*justify-content: space-between;*/
   padding-left: 0;
   list-style: none;
   color: var(--primary-shade2-color);
 }
 .nav-item {
+  margin-top: 32px;
+  margin-right: 50px;
+  margin-bottom: 32px;
   font-weight: normal;
 }
 .primary-contact {
+  margin-left: 50px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -156,6 +167,10 @@ body {
   cursor: pointer;
 }
 
+.base-skills {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .skills-title {
   font-weight: bold;
   font-size: 14px;
@@ -181,7 +196,13 @@ body {
   color: var(--primary-color);
 }
 
+.doing {
+  padding-bottom: 94px;
+}
+
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--secondary-shade-color);
 }
 .team-mate-name {
@@ -198,7 +219,7 @@ body {
   color: var(--primary-shade2-color);
 }
 
-/*******стили для странички Портфолио***********/
+/*******П О Р Т Ф О Л И О***********/
 
 /*************filter************/
 
@@ -247,7 +268,11 @@ body {
 /*----------FOOTER----------*/
 .footer {
   background: var(--primary-shade-color);
-  width: 200;
+}
+
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .white-logo {
@@ -259,9 +284,10 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
-/*.white-logo{
-color: var(--secondary-color);
-}*/
+
+.address {
+  margin-top: 20px;
+}
 
 .map-link,
 .secondary-contact-link {
