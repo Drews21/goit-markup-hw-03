@@ -112,6 +112,10 @@ body {
   list-style: none;
   color: var(--primary-shade2-color);
 }
+
+/*.primary-contact:not(:last-child) {
+  margin-left: 50px;
+}*/
 .primary-contact {
   display: block;
   margin-left: 50px;
@@ -128,7 +132,9 @@ body {
 }
 
 /*******-------STUDIO-----***********/
-
+.section {
+  padding: 94px 0;
+}
 /*----------gallery-----------*/
 
 .hero-title {
@@ -145,23 +151,21 @@ body {
   color: var(--secondary-color);
 }
 .hero-section {
-  padding: 200px 452px 280px;
+  padding: 200px 0;
   text-align: center;
   background-color: var(--primary-shade-color);
 }
 
-/*-----button in HERO-----*/
+/*-----button  HERO-----*/
 .primary-btn {
   background-color: var(--accent-color);
   font-family: inherit;
-  font-style: normal;
+  /*font-style: normal;*/
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-
   padding: 10px 32px;
-  border-radius: 8px;
-
+  /*border-radius: 8px;*/
   letter-spacing: 0.06em;
   color: var(--secondary-color);
   cursor: pointer;
@@ -169,7 +173,7 @@ body {
 
 .base-skills {
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 47px;
 }
 .skills-title {
   font-weight: bold;
@@ -193,9 +197,6 @@ body {
 .skills-list {
   display: flex;
 }
-.skills-item {
-  margin-right: 30px;
-}
 .skills-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -211,32 +212,33 @@ body {
 }
 
 .doing {
+  padding-top: 47px;
   padding-bottom: 94px;
 }
 .doing-list {
   display: flex;
 }
-.doing-item {
+.doing-item:not(:last-child) {
   margin-right: 30px;
 }
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94 0px;
   background-color: var(--secondary-shade-color);
 }
 .team-list {
   display: flex;
 }
-.team-item {
+.team-item:not(:last-child) {
   margin-right: 30px;
 }
 .team-mate-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--primary-color);
+  margin-bottom: 10px;
 }
 .team-mate-position {
   font-size: 16px;
@@ -246,11 +248,8 @@ body {
 }
 .team-wrap {
   text-align: center;
-  width: 270px;
-  margin-bottom: 5px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background: #ffffff;
+  padding: 30px 0;
+  background-color: var(--secondary-color);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -258,9 +257,7 @@ body {
 }
 
 /*******П О Р Т Ф О Л И О***********/
-.gallery {
-  background-color: rgb(180, 223, 116);
-}
+
 /*************filter************/
 
 .secondary-btn {
@@ -282,17 +279,14 @@ body {
 
 .filter-list {
   display: flex;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
 }
 .filter-btn {
-  padding-top: 94px;
-  padding-bottom: 0px;
+  margin-bottom: 50px;
 }
 
-.filter-item {
-  margin: 8px;
+.filter-item:not(:last-child) {
+  margin-right: 8px;
 }
 .filter-item:hover {
   color: var(--accent-color);
@@ -308,19 +302,23 @@ body {
   padding-bottom: 94px;
 }
 
-.wrap {
+.wrap:not(:nth-child(3n)) {
   width: 370px;
   height: 404px;
-  border: 1px solid #eeeeee;
   margin-right: 30px;
+}
+.wrap:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
 .wrap-text {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .projects-list {
   display: flex;
+  flex-wrap: wrap;
 }
 .projects-title {
   font-weight: bold;
@@ -329,7 +327,6 @@ body {
   letter-spacing: 0.06em;
   color: var(--primary-color);
 }
-
 .projects-text {
   font-weight: normal;
   font-size: 16px;
@@ -341,27 +338,22 @@ body {
 /*----------FOOTER----------*/
 .footer {
   background: var(--primary-shade-color);
+  padding: 60px 0;
 }
 
 .footer-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .white-logo {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
 
 .address {
   margin-top: 20px;
 }
-
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .map-link,
 .secondary-contact-link {
   font-style: normal;
