@@ -82,38 +82,17 @@ body {
   text-decoration: none;
   margin: 0;
 }
-
-.primary-contact:hover,
-.primary-contact:focus {
-  color: var(--accent-color);
-  cursor: pointer;
-}
-.contact-list {
-  display: flex;
-  margin-left: auto;
-  /*justify-content: space-between;*/
-  padding-left: 0;
-  list-style: none;
-  color: var(--primary-shade2-color);
-}
-.nav-item {
-  margin-top: 32px;
+.nav-item:not(:last-child) {
   margin-right: 50px;
-  margin-bottom: 32px;
-  font-weight: normal;
 }
-.primary-contact {
-  margin-left: 50px;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--primary-shade2-color);
-}
+
 .nav-link {
+  display: block;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-color);
+  padding: 32px 0;
 }
 .studio:visited {
   color: var(--accent-color);
@@ -123,6 +102,27 @@ body {
 }
 .nav-link:hover,
 .nav-link:focus {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.contact-list {
+  display: flex;
+  margin-left: auto;
+  list-style: none;
+  color: var(--primary-shade2-color);
+}
+.primary-contact {
+  display: block;
+  margin-left: 50px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-shade2-color);
+  padding: 32px 0;
+}
+.primary-contact:hover,
+.primary-contact:focus {
   color: var(--accent-color);
   cursor: pointer;
 }
@@ -312,12 +312,16 @@ body {
   width: 370px;
   height: 404px;
   border: 1px solid #eeeeee;
+  margin-right: 30px;
   margin-bottom: 30px;
 }
 .wrap-text {
   padding: 20px 24px;
 }
 
+.projects-list {
+  display: flex;
+}
 .projects-title {
   font-weight: bold;
   font-size: 18px;
