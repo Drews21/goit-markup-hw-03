@@ -25,9 +25,7 @@ h2,
 h3,
 h4,
 p,
-ul,
-li {
-  /*outline: 1px dotted teal;*/
+ul {
   margin: 0;
 }
 
@@ -39,7 +37,6 @@ body {
 }
 
 .header {
-  /*background-color: yellowgreen;*/
   border-bottom: 1px solid #ececec;
 }
 
@@ -88,6 +85,7 @@ body {
 
 .nav-link {
   display: block;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -112,10 +110,6 @@ body {
   list-style: none;
   color: var(--primary-shade2-color);
 }
-
-/*.primary-contact:not(:last-child) {
-  margin-left: 50px;
-}*/
 .primary-contact {
   display: block;
   margin-left: 50px;
@@ -165,15 +159,15 @@ img {
 .primary-btn {
   background-color: var(--accent-color);
   font-family: inherit;
-  /*font-style: normal;*/
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  padding: 10px 32px;
-  /*border-radius: 8px;*/
   letter-spacing: 0.06em;
   color: var(--secondary-color);
   cursor: pointer;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 4px;
 }
 
 .base-skills {
@@ -206,6 +200,9 @@ img {
   margin-right: 30px;
 }
 
+.section {
+  padding: 94px 0;
+}
 .section-title {
   font-weight: bold;
   font-size: 36px;
@@ -215,7 +212,6 @@ img {
   color: var(--primary-color);
   margin-bottom: 50px;
 }
-
 .doing {
   padding-top: 47px;
   padding-bottom: 94px;
@@ -228,7 +224,6 @@ img {
 }
 
 .team {
-  padding: 94 0px;
   background-color: var(--secondary-shade-color);
 }
 .team-list {
@@ -266,13 +261,17 @@ img {
 /*************filter************/
 
 .secondary-btn {
-  font-family: Roboto;
+  font-family: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  background: var(--secondary-shade-color);
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
 }
 
 .secondary-btn:hover,
@@ -285,6 +284,7 @@ img {
 .filter-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .filter-btn {
   margin-bottom: 50px;
@@ -308,8 +308,8 @@ img {
 }
 
 .wrap:not(:nth-child(3n)) {
-  width: 370px;
-  height: 404px;
+  /* width: 370px;
+  height: 404px;*/
   margin-right: 30px;
 }
 .wrap:not(:nth-last-child(-n + 3)) {
