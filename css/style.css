@@ -27,6 +27,7 @@ h4,
 p,
 ul {
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -110,9 +111,12 @@ body {
   list-style: none;
   color: var(--primary-shade2-color);
 }
+.primary-contact-item:not(:first-child) {
+  margin-left: 50px;
+}
 .primary-contact {
   display: block;
-  margin-left: 50px;
+  /*margin-left: 50px;*/
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
