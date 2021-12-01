@@ -112,8 +112,7 @@ body {
   list-style: none;
   color: var(--primary-shade2-color);
 }
-.primary-contact-item,
-.contact-list-item:not(:first-child) {
+.primary-contact-item:not(:first-child) {
   margin-left: 50px;
 }
 
