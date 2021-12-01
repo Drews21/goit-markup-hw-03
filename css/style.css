@@ -112,12 +112,13 @@ body {
   list-style: none;
   color: var(--primary-shade2-color);
 }
-.primary-contact-item:not(:first-child) {
+.primary-contact-item,
+.contact-list-item:not(:first-child) {
   margin-left: 50px;
 }
+
 .primary-contact {
   display: block;
-  /*margin-left: 50px;*/
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
