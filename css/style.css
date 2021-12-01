@@ -13,6 +13,7 @@ html {
   --primary-shade2-color: #757575;
 
   --accent-color: #2196f3;
+  --border-color: #eeeeee;
 
   --secondary-color: #ffffff;
   --secondary-shade-color: #f5f4fa;
@@ -175,7 +176,6 @@ img {
 }
 
 .base-skills {
-  padding-top: 94px;
   padding-bottom: 47px;
 }
 .skills-title {
@@ -204,9 +204,9 @@ img {
   margin-right: 30px;
 }
 
-.section {
+/*.section {
   padding: 94px 0;
-}
+}*/
 .section-title {
   font-weight: bold;
   font-size: 36px;
@@ -312,8 +312,6 @@ img {
 }
 
 .wrap:not(:nth-child(3n)) {
-  /* width: 370px;
-  height: 404px;*/
   margin-right: 30px;
 }
 .wrap:not(:nth-last-child(-n + 3)) {
@@ -321,7 +319,8 @@ img {
 }
 .wrap-text {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  border: 1px solid;
+  border-color: var(--border-color);
   border-top: none;
 }
 
